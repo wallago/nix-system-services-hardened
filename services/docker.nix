@@ -5,7 +5,6 @@
     ProtectHome = true;
     ProtectKernelModules = true;
     ProtectKernelLogs = true;
-    ProtectControlGroups = true; 
     ProtectClock = true;
     ProtectProc = "invisible";
     PrivateTmp = true;
@@ -20,7 +19,6 @@
     RestrictNamespaces = [
       "~user"
     ];
-    MemoryDenyWriteExecute = true;
     SystemCallFilter = [
       "~@debug"
       "~@raw-io"
